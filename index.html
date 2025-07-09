@@ -220,38 +220,68 @@
       </div>
     </section>
 
-    <section class="contacto" id="contacto">
-      <div class="contenedor-contacto">
-        <h2>Contáctanos</h2>
-        <form
-          action="https://formsubmit.co/contacto@bydlightsolutions.com"
-          method="POST"
-        >
-          <input
-            type="hidden"
-            name="_next"
-            value="https://tufarmacia.online/agradecimiento.html"
-          />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_template" value="box" />
+<section class="contacto" id="contacto">
+  <div class="contenedor-contacto">
+    <h2>Contáctanos</h2>
 
-          <input type="text" name="name" placeholder="Tu nombre*" required />
-          <input
-            type="email"
-            name="email"
-            placeholder="Tu correo electrónico*"
-            required
-          />
-          <textarea
-            name="message"
-            rows="6"
-            placeholder="Tu mensaje*"
-            required
-          ></textarea>
-          <button type="submit">Enviar mensaje</button>
-        </form>
-      </div>
-    </section>
+    <form
+      id="formulario-contacto"
+      action="https://formsubmit.co/contacto@bydlightsolutions.com"
+      method="POST"
+    >
+      <!-- Ocultamos redirección innecesaria -->
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="box" />
+
+      <input type="text" name="name" placeholder="Tu nombre*" required />
+      <input type="email" name="email" placeholder="Tu correo electrónico*" required />
+      <textarea name="message" rows="6" placeholder="Tu mensaje*" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+
+    <!-- Mensaje de éxito (oculto por defecto) -->
+    <div id="mensaje-exito" style="
+      display: none;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #e9f9ee;
+      border-left: 5px solid #4CAF50;
+      color: #1d1d1d;
+      font-weight: 500;
+      border-radius: 6px;">
+      ✅ ¡Gracias por tu mensaje! Te responderemos a la brevedad.
+    </div>
+  </div>
+</section>
+
+<!-- Script para interceptar envío y mostrar el mensaje -->
+<script>
+  const form = document.getElementById('formulario-contacto');
+  const mensajeExito = document.getElementById('mensaje-exito');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      body: formData
+    })
+    .then(res => {
+      if (res.ok) {
+        form.reset();
+        form.style.display = 'none';
+        mensajeExito.style.display = 'block';
+      } else {
+        alert('Hubo un error al enviar el mensaje. Intenta nuevamente.');
+      }
+    })
+    .catch(() => {
+      alert('Error de conexión. Intenta más tarde.');
+    });
+  });
+</script>
+
 
     <footer class="footer">
       <div class="footer-container">
