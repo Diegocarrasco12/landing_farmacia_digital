@@ -1,3 +1,4 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,7 @@ body {
   color: white;
 }
 
+/* HERO */
 .hero {
   position: relative;
   background: url('src/img/background.jpg') no-repeat center center/cover;
@@ -83,8 +85,7 @@ body {
   background-color: #5f6bff;
 }
 
-/* ======== MENÚ HAMBURGUESA ======== */
-
+/* MENÚ HAMBURGUESA */
 .menu-toggle {
   display: none;
 }
@@ -101,7 +102,7 @@ body {
   display: flex;
 }
 
-/* ======== RESPONSIVE ======== */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -172,10 +173,13 @@ body {
   .faq-grid {
     grid-template-columns: 1fr !important;
   }
+
+  .servicios-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
 
-/* ======== SECCIÓN SOBRE NOSOTROS ======== */
-
+/* SOBRE NOSOTROS */
 .sobre-nosotros {
   background-color: #f1f3ff;
   padding: 60px 20px;
@@ -201,18 +205,33 @@ body {
   line-height: 1.6;
 }
 
-.boton.secundaria {
-  background-color: #808CFF;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 50px;
+/* ====== SERVICIOS (FAQ) ====== */
+.servicios {
+  background: linear-gradient(to bottom, #ffffff, #f1f3ff);
+  padding: 60px 20px;
+  text-align: center;
+  color: #1d1d1d;
 }
 
-.faq-grid {
+.servicios .contenedor {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1d1d1d;
+}
+
+.servicios .descripcion {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.servicios-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
@@ -220,41 +239,50 @@ body {
   align-items: stretch;
 }
 
-.faq-card {
+.servicio-card {
   background: white;
-  padding: 25px;
-  border-radius: 10px;
-  text-align: left;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  transition: transform 0.2s;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  text-align: center;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-.faq-card:hover {
-  transform: translateY(-4px);
+.servicio-card:hover {
+  transform: translateY(-5px);
 }
 
-.faq-card h3 {
+.servicio-card i {
+  font-size: 36px;
+  color: #4e5bf2;
+  margin-bottom: 15px;
+}
+
+.servicio-card h3 {
   font-size: 1rem;
+  font-weight: bold;
   color: #1d1d1d;
   margin-bottom: 10px;
 }
 
-.faq-card p {
+.servicio-card p {
   font-size: 0.95rem;
   color: #444;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-top: auto;
 }
 
-.icono-faq {
-  font-size: 30px;
-  color: #4e5bf2;
-  margin-bottom: 15px;
-  display: inline-block;
+.portafolio {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  color: #1d1d1d;
 }
+
+
 .portafolio {
   background-color: #fff;
   padding: 60px 20px;
