@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tu Farmacia Digital</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero" id="inicio">
+      <nav class="navbar">
+        <img
+          src="src/img/logofarma.png"
+          alt="Logo Tu Farmacia Digital"
+          class="logo"
+        />
+
+        <!-- Menú hamburguesa -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <div class="menu-container">
+          <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#soluciones">Soluciones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="hero-text">
+        <p class="subtitulo">Tu farmacia en línea, sin complicaciones</p>
+        <h1>Crea tu farmacia online profesional</h1>
+        <p>
+          Ofrecemos desarrollo personalizado para farmacias, con enfoque en
+          ventas, recetas y atención al cliente. Diseño moderno y funcional para
+          crecer en digital.
+        </p>
+        <a href="#" class="boton">SOLICITAR PROPUESTA</a>
+      </div>
+    </header>
+
+    <!-- SECCIÓN SOBRE NOSOTROS -->
+    <section class="sobre-nosotros">
+      <div class="contenedor">
+        <h2>Sobre nosotros</h2>
+        <p class="descripcion">
+          <strong
+            >Creamos soluciones digitales personalizadas para tu
+            farmacia.</strong
+          ><br />
+          ¿Tienes dudas sobre el proceso, funcionalidades o precios? Estamos
+          aquí para ayudarte a dar el siguiente paso en tu transformación
+          digital.
+        </p>
+        <a href="#" class="boton secundaria">SOLICITAR ASESORÍA GRATUITA</a>
+
+        <div class="faq-grid">
+          <div class="faq-card">
+            <i class="fas fa-pen-to-square icono-faq"></i>
+            <h3>¿Cómo funciona la plataforma?</h3>
+            <p>
+              Creamos tu sitio con WordPress y WooCommerce, o desde cero
+              totalmente personalizado, integrando formularios, carrito de
+              compras y gestión de recetas, adaptado a tus necesidades.
+            </p>
+          </div>
+
+          <div class="faq-card">
+            <i class="fas fa-drafting-compass icono-faq"></i>
+            <h3>¿La página se diseña desde cero?</h3>
+            <p>
+              Sí, diseñamos tu sitio desde cero, con base en tu identidad visual
+              y enfoque comercial. No usamos plantillas genéricas si buscas un
+              resultado único.
+            </p>
+          </div>
+
+          <div class="faq-card">
+            <i class="fas fa-paper-plane icono-faq"></i>
+            <h3>¿Se puede vincular con sistemas como Golan?</h3>
+            <p>
+              Analizamos la compatibilidad con tu sistema (como Golan) y vemos
+              opciones de integración si es necesario.
+            </p>
+          </div>
+
+          <div class="faq-card">
+            <i class="fas fa-keyboard icono-faq"></i>
+            <h3>¿Qué incluye la mantención de la página?</h3>
+            <p>
+              Ofrecemos un plan mensual con actualizaciones, respaldo, seguridad
+              y soporte técnico.
+            </p>
+          </div>
+
+          <div class="faq-card">
+            <i class="fas fa-credit-card icono-faq"></i>
+            <h3>¿Se puede vincular sistemas de pago WebPay u otros?</h3>
+            <p>
+              Sí, configuramos WebPay, MercadoPago u otros medios de pago para
+              que tus clientes compren con total seguridad y facilidad.
+            </p>
+          </div>
+
+          <div class="faq-card">
+            <i class="fas fa-money-bill-wave icono-faq"></i>
+            <h3>¿Cuánto cuesta?</h3>
+            <p>
+              Te entregamos una propuesta personalizada según lo que necesites.
+              Escríbenos y la preparamos sin compromiso.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portafolio" id="portafolio">
+      <div class="contenedor">
+        <h2>Portafolio</h2>
+        <p class="descripcion">
+          Hemos trabajado en el desarrollo de plataformas digitales funcionales,
+          enfocadas en mejorar la experiencia del cliente en farmacias y
+          negocios del rubro salud.
+        </p>
+
+        <div class="galeria-portafolio">
+          <img src="src/img/tu-farmacia-logo.png" alt="Proyecto 1" />
+          <img src="src/img/portafolio-movil.jpg" alt="Proyecto 2" />
+          <img src="src/img/isp.png" alt="Proyecto 3" />
+          <img src="src/img/Cenabast.jpg" alt="Proyecto 4" />
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonio">
+      <div class="contenedor-testimonio">
+        <h2>"Cada gran farmacia digital comienza con una idea valiente."</h2>
+        <p class="mensaje">
+          Creemos en el poder de la innovación para transformar el servicio
+          farmacéutico. Esta es tu oportunidad para marcar la diferencia en la
+          salud de tus clientes.
+        </p>
+        <img
+          src="src/img/tu-farmacia-logo.png"
+          alt="Tu Farmacia Digital"
+          class="logo-testimonio"
+        />
+        <p class="autor">
+          <i class="fas fa-user"></i> Tu Farmacia Digital<br />
+          <span>EQUIPO DE DESARROLLO Y DISEÑO</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="soluciones" id="soluciones">
+      <div class="contenedor-soluciones">
+        <h2>Soluciones completas y<br /><span>confiables</span></h2>
+        <p class="intro">
+          <strong>Desarrollos a medida:</strong> Adaptamos tu sitio a la
+          identidad de tu farmacia (colores, diseño, logo), con funcionalidades
+          específicas como catálogos de productos, carrito de compra y
+          seguimiento de pedidos.
+        </p>
+
+        <div class="soluciones-grid">
+          <div class="solucion">
+            <img src="src/img/isp.png" alt="ISP" />
+            <h3>Cumplimiento legal en Chile</h3>
+            <p>
+              Construimos plataformas 100 % conformes con el Decreto 466/1984 y
+              su Título VI bis, obteniendo la autorización del Instituto de
+              Salud Pública (ISP) para vender medicamentos de forma electrónica.
+            </p>
+          </div>
+
+          <div class="solucion">
+            <img src="src/img/Cenabast.jpg" alt="Ley Cenabast" />
+            <h3>Ley Cenabast /<br />RemediosMásBaratos.cl</h3>
+            <p>
+              Integramos tu plataforma con el programa público Ley 21.198, que
+              permite ofrecer medicamentos con descuentos de hasta 80 %. Esto
+              facilita el acceso a precios regulados y mejora la competitividad
+              de tu farmacia.
+            </p>
+          </div>
+
+          <div class="solucion">
+            <img src="src/img/developer.jpg" alt="Documentación y soporte" />
+            <h3>Documentación y soporte</h3>
+            <p>
+              Manual del sitio, política de devoluciones según la Ley del
+              Consumidor y soporte técnico para actualizaciones, copias de
+              seguridad y mejoras continuas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <div class="contenedor-contacto">
+        <h2>Contáctanos</h2>
+        <form
+          action="https://formsubmit.co/contacto@bydlightsolutions.com"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="_next"
+            value="https://tufarmacia.online/agradecimiento.html"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="box" />
+
+          <input type="text" name="name" placeholder="Tu nombre*" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Tu correo electrónico*"
+            required
+          />
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Tu mensaje*"
+            required
+          ></textarea>
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <img
+            src="src/img/logofarma.png"
+            alt="Logo Tu Farmacia Digital"
+            class="footer-logo"
+          />
+          <p>
+            <em
+              >Creamos soluciones digitales para farmacias<br />con respaldo
+              legal y profesionalismo.</em
+            >
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://wa.me/56968771676"
+              target="_blank"
+              aria-label="WhatsApp"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://github.com/Diegocarrasco12"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.bydlightsolutions.com/"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <h3>Contacto</h3>
+          <p>contacto@bydlightsolutions.com</p>
+          <p>+56 9 6877 1676</p>
+          <p>+56 9 8324 9135</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2025 Digital Agency | Powered by Digital Agency</p>
+      </div>
+    </footer>
+
+    <a href="#inicio" class="scroll-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </body>
+</html>
